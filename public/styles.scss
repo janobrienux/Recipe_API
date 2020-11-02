@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+  background-image: url('./images/background2.jpg');
+  background-size: cover;
+  font-family: 'Reenie Beanie', cursive; 
+}
+
 .input-group {
   margin-top: 2%;
   margin-bottom: 2%;
+  form-control {
+    font-size: 24px;
+  }
 }
+.container {
+  border-radius: 8px;
+  width: fit-content;
+}
+.card {
+  display: flex;
+  margin: 5%;
+}
+.card-body {
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+}
+.btn-primary {
+  background-color: lightgrey;
+}
+

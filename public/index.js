@@ -21,21 +21,30 @@ function useApiData(data) {
   let contentDiv = document.getElementById('content')
   
   for(let i = 0; i <= 10; i++ ) {
-   
   let content = document.createElement("div")
     content.innerHTML = `
-    <div class="card" style="width: 18rem;">
+    <div class="container">
+    <div class="row-md-3">
+    <div class="card flex-row" style="width: 18rem;">
     <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">${data.hits[i].recipe.label}</h5>
-      <p class="card-text">${data.hits[i].recipe.healthLabels}</p>
+      <h1 class="card-title">${data.hits[i].recipe.label}</h1>
+      <h3 class="card-text">Health Label: ${data.hits[i].recipe.healthLabels}</h3>
       <ul>
-      <li> Serves: ${data.hits[i].recipe.yield}
+      <li> <h5>
+      Serves: ${data.hits[i].recipe.yield}
+      </h5>
       </li>
-      <li>Nutrients:${hits[i].recipe.totalNutrients}</li>
+      <li>
+      <h5>
+      Calories: ${data.hits[i].recipe.calories.toFixed()}
+      </h5>
+      </li>
       </ul>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Full Recipe</a>
     </div>
+  </div>
+    </div> 
   </div>
     
     `
