@@ -14,17 +14,18 @@ body {
   }
 }
 .container {
-  margin: 5%;
+  // margin: 5%;
   border-radius: 8px;
 }
-.row {
-  margin: 10%;
-}
+
 .card-img-top {
   height: 160px;
 }
+.recipeDiv {
+  margin: 30px;
+  background-color: rgba(34, 32, 32, 0.413);
+}
 .card {
-  margin: 10%;
   height: 20%;
 }
 .card-body {
@@ -32,5 +33,6 @@ body {
   color: white;
 }
 .btn-primary {
-  background-color: dimgrey;
+  background-color:rgba(34, 32, 32, 0.413);
+  border: white 2px solid;
 }

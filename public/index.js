@@ -44,7 +44,7 @@ function useApiData(data) {
   </div>
     
     `;
-
+    content.setAttribute("class", "recipeDiv");
     contentDiv.appendChild(content);
   }
 }
