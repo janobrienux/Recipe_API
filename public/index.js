@@ -20,7 +20,7 @@ async function sendApiRequest() {
 function useApiData(data) {
   let contentDiv = document.getElementById("content");
 
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 0; i <= 15; i++) {
     let content = document.createElement("div");
     content.innerHTML = `
     <div class="card" style="width: 18rem;">
