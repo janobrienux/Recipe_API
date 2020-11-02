@@ -8,23 +8,23 @@ searchBtn.addEventListener("click", () => {
 async function sendApiRequest() {
   let APP_ID = "b474311d";
   let API_KEY = "4e076f97315ec6a0485ace911e6c22ff";
-  let searchTerm = document.getElementById("search").value
+  let searchTerm = document.getElementById("search").value;
   let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${searchTerm}`);
   console.log(searchTerm);
   console.log(response);
-  let data = await response.json()
-  console.log(data)
-  useApiData(data)
+  let data = await response.json();
+  console.log(data);
+  useApiData(data);
 }
 
 function useApiData(data) {
-  let contentDiv = document.getElementById('content')
-  
-  for(let i = 0; i <= 10; i++ ) {
-  let content = document.createElement("div")
+  let contentDiv = document.getElementById("content");
+
+  for (let i = 0; i <= 2; i++) {
+    let content = document.createElement("div");
     content.innerHTML = `
     <div class="container">
-    <div class="row-md-3">
+    <div class="row">
     <div class="card flex-row" style="width: 18rem;">
     <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
@@ -47,8 +47,8 @@ function useApiData(data) {
     </div> 
   </div>
     
-    `
- 
-  contentDiv.appendChild(content)
+    `;
+
+    contentDiv.appendChild(content);
   }
 }
