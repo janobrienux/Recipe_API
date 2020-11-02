@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
 
 body {
-  background-image: url('./images/background2.jpg');
+  background-image: url("./images/background2.jpg");
   background-size: cover;
-  font-family: 'Reenie Beanie', cursive; 
+  font-family: "Reenie Beanie", cursive;
 }
 
 .input-group {
@@ -14,18 +14,23 @@ body {
   }
 }
 .container {
+  margin: 5%;
   border-radius: 8px;
-  width: fit-content;
+}
+.row {
+  margin: 10%;
+}
+.card-img-top {
+  height: 160px;
 }
 .card {
-  display: flex;
-  margin: 2%;
+  margin: 10%;
+  height: 20%;
 }
 .card-body {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: "Reenie Beanie", cursive;
   color: white;
 }
 .btn-primary {
-  background-color: lightgrey;
+  background-color: dimgrey;
 }
-

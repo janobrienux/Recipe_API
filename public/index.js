@@ -20,12 +20,10 @@ async function sendApiRequest() {
 function useApiData(data) {
   let contentDiv = document.getElementById("content");
 
-  for (let i = 0; i <= 2; i++) {
+  for (let i = 0; i <= 10; i++) {
     let content = document.createElement("div");
     content.innerHTML = `
-    <div class="container">
-    <div class="row">
-    <div class="card flex-row" style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
     <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
       <h1 class="card-title">${data.hits[i].recipe.label}</h1>
@@ -42,8 +40,6 @@ function useApiData(data) {
       </li>
       </ul>
       <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Full Recipe</a>
-    </div>
-  </div>
     </div> 
   </div>
     
